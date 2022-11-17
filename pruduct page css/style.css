@@ -1,0 +1,315 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Poppins;
+    background-color: #ffebc1;
+    height: 200vh;
+}
+
+.mycard {
+    width: 45px;
+    height: 45px;
+    background-color: #fff3d3;
+    display: grid;
+    place-content: center;
+}
+.mycard i {
+    font-size: 0.93rem;
+}
+.mycard span {
+    width: 18px;
+    height: 18px;
+    right: -3px;
+    top: -3px;
+    display: grid;
+    place-content: center;
+    background-color: #fdc20c;
+    font-size: 0.78rem;
+}
+.background {
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: linear-gradient(to left, #fdc83e, #fdb619, #fdc83e, #fdb619);
+    z-index: -1;
+}
+.prevBtn>*,
+.nextBtn>* {
+    transition: 0.3s;
+}
+.prevBtn span,
+.nextBtn span {
+    display: inline-block;
+}
+.prevBtn:hover i {
+    transform: translate(-250%);
+}
+.nextBtn:hover i {
+    transform: translate(250%);
+}
+.prevBtn:hover span {
+    transform: translate(100%);
+}
+.nextBtn:hover span {
+    transform: translate(-100%);
+}
+.product-main {
+    transform-style: preserve-3d;
+    background: #ffefcf;
+    width: 93% !important;
+    box-shadow: inset 0px 1px 20px #FFF3;
+}
+.product-main::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%) translateZ(-1px);
+    width: 80%;
+    height: 50px;
+    background-color: #ebd8b1;
+    border-radius: 50px;
+}
+.product-main h2 {
+    color: #45409c;
+    word-spacing: 6px;
+}
+.side {
+    cursor: pointer;
+    width: 77px;
+    height: 77px;
+    background: #fff6e3;
+    transition: 0.2s;
+}
+.side.active,
+.size.active {
+    background: #fdc20c !important;
+}
+.side:hover,
+.size:hover {
+    background: #fdc20c !important;
+    transform: translateY(-5px);
+}
+
+.product-img-box {
+    position: relative;
+    max-width: 360px;
+    height: 360px;
+    background: #fff6e3;
+    box-shadow: inset 0px 1px 30px #FFF9;
+}
+.product-img-box::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 117%;
+    height: 117%;
+    border-top: 2px solid #ff6c02;
+    border-bottom: 2px solid #ff6c02;
+    border-radius: inherit;
+}
+.product-img-box .image-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%) rotateZ(-5deg);
+    width: 85%;
+}
+.product-img-box .image-box::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-75%);
+    width: 90%;
+    height: 30px;
+    background: #ff6b026b;
+    filter: blur(20px);
+    z-index: -1;
+}
+.product-img-box .price {
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    transform: translate(-50%);
+    color: #45409c;
+}
+.colors .color {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--color);
+    color: var(--color);
+}
+.color::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    background: inherit;
+    border-radius: inherit;
+    opacity: 0.15;
+}
+.color.active::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    color: inherit;
+    border-radius: inherit;
+    border: 1px solid;
+}
+.sizes {
+    margin-top: -13px;
+}
+.sizes .size {
+    cursor: pointer;
+    width: 58px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 12px;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.2s;
+}
+
+.review-box,
+.color-box,
+.size-box {
+    margin-bottom: 33px;
+}
+
+.results-manage .form-select {
+    background-color: #fff2d8;
+}
+.result-card {
+    background: #ffe5d1;
+    padding: 30px;
+    border-radius: 47px;
+    box-shadow: inset 30px 30px 111px #fffcf9, inset -30px -30px 111px #fffcf9;
+    transition: 0.4s;
+    z-index: 2;
+    overflow: hidden;
+}
+.result-card::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+    background: linear-gradient(to right top, #fdc10c55, #ff6b0133);
+    border-radius: inherit;
+    z-index: -1;
+    transition: 0.3s;
+}
+.result-card:hover {
+    transform: translateY(-10px);
+}
+.result-card:hover:before {
+    width: 100%;
+    height: 100%;
+}
+.top-card i {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d3d3d3da;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    transition: 0.3s;
+}
+.top-card i:hover {
+    background-color: #FFF;
+}
+.result-img-box {
+    height: 250px;
+}
+.behind-img {
+    left: 50%;
+    transform: translate(-50%);
+    width: 79%;
+    height: 125px;
+    background: var(--back-behind);
+    box-shadow: 0px 50px 100px #ff6b024b, -5px -5px 50px #ff6b024b;
+    overflow: hidden;
+}
+.behind-img::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-42%, -50%);
+    width: 172px;
+    height: 172px;
+    border-radius: 50%;
+    background: #fdc10c;
+    border: 5px solid #FFF;
+}
+.related-img-box {
+    width: 240px;
+    height: 240px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.related-img {
+    transform: translateY(-10px);
+}
+.related-img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(-5%, -50%) rotate(323deg);
+    width: 120%;
+    height: 50px;
+    background: #ff6b029e;
+    filter: blur(25px);
+    z-index: -1;
+}
+.bottom-card {
+    color: #45409c;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #ff6b01;
+}
+
+.fs-7 {
+    font-size: 0.9rem!important;
+}
+
+.fw-normbold {
+    font-weight: 500!important;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    color: #fdc20c !important;
+}
+
+.btn-dark {
+    background: #000 !important;
+}

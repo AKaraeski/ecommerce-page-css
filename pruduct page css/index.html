@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page with css</title>
+    <!--? font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--? bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--! for animation i used this -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="mx-5">
+    <!-- nav -->
+    <header class="py-3">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#">
+                shophub
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="fw-semibold d-flex align-items-center">
+                    <div class="price">
+                        <span>
+                            $239.00
+                        </span>
+                    </div>
+                    <div class="mycard rounded-pill ms-3 position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute rounded-pill">
+                            3
+                        </span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="product-details container-fluid position-relative p-5">
+            <div class="background position-absolute h-75 w-100 rounded-5"></div>
+            <header class="d-flex  align-items-center mb-3">
+                <div class="me-auto fs-7 fw-semibold">
+                    <span class="text-light">Home</span>
+                    <span>/</span>
+                    <span>Product Details</span>
+                </div>
+                <div class="m-auto">
+                    <h2 class="fw-semibold">
+                        Product Details
+                    </h2>
+                </div>
+                <div class="ms-auto">
+                    <button class="prevBtn bg-transparent border-0 me-4">
+                        <span>Prev</span>
+                        <i class="fa-solid fa-arrow-left-long ms-2"></i>
+                    </button>
+                    <button class="nextBtn bg-transparent border-0 ms-4">
+                        <i class="fa-solid fa-arrow-right-long me-2"></i>
+                        <span>Next</span>
+                    </button>
+                </div>
+            </header>
+            <div class="product-main mx-auto rounded-5 p-5" data-aos="slide-up" data-aos-duration="1000" >
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 mb-5 mb-lg-0">
+                            <h2 class="text-capitalize fw-bold">
+                                nike air max 270 to chuck taylors
+                            </h2>
+                            <p class="text-secondary my-4">
+                                Nike's Air Force 1s were 
+                                <br>
+                                among the most popular
+                                <br>
+                                sneakers this year.
+                            </p>
+                            <div class="sides d-flex pt-4">
+                                <div class="side me-4 rounded-4 p-1 pt-2">
+                                    <div class="image-box">
+                                        <img src="ratated90.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="side me-4 rounded-4 p-2 active">
+                                    <div class="image-box">
+                                        <img src="banner.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                                <div class="side rounded-4 p-2">
+                                    <div class="image-box">
+                                        <img src="rotated30.png" alt="" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-4">
+                            <div class="product-img-box rounded-pill mx-auto">
+                                <div class="image-box">
+                                    <img src="banner.png" alt="" class="w-100">
+                                </div>
+                                <div class="price">
+                                    <h3 class="fw-bold">
+                                        $239.00
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ps-5 pe-4 mt-5 mt-lg-0">
+                            <div class="review-box w-100 d-flex justify-content-between align-items-center fw-normbold">
+                                <span class="fs-7 fw-semibold">Review:</span>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div>
+                                    <span>4.5</span>
+                                    <span>(60)</span>
+                                </div>
+                            </div>
+                            <div class="color-box w-100 d-flex justify-content-between align-items-center">
+                                <span class="fs-7 fw-semibold">Color:</span>
+                                <div class="colors flex-grow-1 d-flex justify-content-around">
+                                    <span class="color" style="--color:#00d9ff;"></span>
+                                    <span class="color active" style="--color:#ff6b01;"></span>
+                                    <span class="color" style="--color:#fdc20c;"></span>
+                                    <span class="color" style="--color:#ab9160;"></span>
+                                </div>
+                            </div>
+                            <div class="size-box w-100 d-flex justify-content-between">
+                                <span class="fs-7 fw-semibold me-1">Size:</span>
+                                <div class="sizes flex-grow-1 d-flex flex-wrap justify-content-around">
+                                    <div class="size bg-light">37</div>
+                                    <div class="size bg-light active">38</div>
+                                    <div class="size bg-light">39</div>
+                                    <div class="size bg-light">40</div>
+                                    <div class="size bg-light">41</div>
+                                    <div class="size bg-light">42</div>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-dark text-warning px-5 py-3 rounded-4">
+                                Add to cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ralated-products mt-5">
+            <header class="d-flex justify-content-between align-items-center mb-4 p-5 pb-0">
+                <h3 class="fw-bold">
+                    Related Product
+                </h3>
+                <div class="results-manage d-flex align-items-center">
+                    <div class="showing me-3">
+                        <p class="fs-7 fw-semibold m-0">
+                            showing
+                            <span>
+                                1-12
+                            </span>
+                            of
+                            <span>
+                                36
+                            </span>
+                            results
+                        </p>
+                    </div>
+                    <select class="form-select w-auto border-0" aria-label="Default select example">
+                        <option selected>Default sorting</option>
+                    </select>                      
+                </div>
+            </header>
+            <div class="container-fluid px-4">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 py-2 px-4 mb-4" data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div class="result-card card border-0" style="--back-behind:#ff6b01;">
+                            <div class="top-card d-flex justify-content-between mb-4">
+                                <i class="fa-solid fa-expand"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="main-card mb-5">
+                                <div class="result-img-box position-relative">
+                                    <div class="behind-img position-absolute rounded-5"></div>
+                                    <div class="related-img-box position-absolute p-3">
+                                        <div class="related-img position-relative">
+                                            <img class="w-100" src="related-1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card text-center">
+                                <h5 class="fw-bold mb-3">
+                                    Popular Shoe Trends
+                                </h5>
+                                <h5>
+                                    <span>$236.00</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-2 px-4 mb-4" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="result-card card border-0" style="--back-behind:#45409c;">
+                            <div class="top-card d-flex justify-content-between mb-4">
+                                <i class="fa-solid fa-expand"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="main-card mb-5">
+                                <div class="result-img-box position-relative">
+                                    <div class="behind-img position-absolute rounded-5"></div>
+                                    <div class="related-img-box position-absolute p-3">
+                                        <div class="related-img position-relative">
+                                            <img class="w-100" src="related-2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card text-center">
+                                <h5 class="fw-bold mb-3">
+                                    Popular Shoe Trends
+                                </h5>
+                                <h5>
+                                    <span>$236.00</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-2 px-4 mb-4" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="result-card card border-0" style="--back-behind:#01af67;">
+                            <div class="top-card d-flex justify-content-between mb-4">
+                                <i class="fa-solid fa-expand"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="main-card mb-5">
+                                <div class="result-img-box position-relative">
+                                    <div class="behind-img position-absolute rounded-5"></div>
+                                    <div class="related-img-box position-absolute p-3">
+                                        <div class="related-img position-relative">
+                                            <img class="w-100" src="related-3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card text-center">
+                                <h5 class="fw-bold mb-3">
+                                    Popular Shoe Trends
+                                </h5>
+                                <h5>
+                                    <span>$236.00</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-2 px-4 mb-4" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">
+                        <div class="result-card card border-0" style="--back-behind:#999;">
+                            <div class="top-card d-flex justify-content-between mb-4">
+                                <i class="fa-solid fa-expand"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="main-card mb-5">
+                                <div class="result-img-box position-relative">
+                                    <div class="behind-img position-absolute rounded-5"></div>
+                                    <div class="related-img-box position-absolute p-3">
+                                        <div class="related-img position-relative">
+                                            <img class="w-100" src="related-4.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card text-center">
+                                <h5 class="fw-bold mb-3">
+                                    Popular Shoe Trends
+                                </h5>
+                                <h5>
+                                    <span>$236.00</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-2 px-4 mb-4" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="400">
+                        <div class="result-card card border-0" style="--back-behind:#222;">
+                            <div class="top-card d-flex justify-content-between mb-4">
+                                <i class="fa-solid fa-expand"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="main-card mb-5">
+                                <div class="result-img-box position-relative">
+                                    <div class="behind-img position-absolute rounded-5"></div>
+                                    <div class="related-img-box position-absolute p-3">
+                                        <div class="related-img position-relative">
+                                            <img class="w-100" src="related-5.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card text-center">
+                                <h5 class="fw-bold mb-3">
+                                    Popular Shoe Trends
+                                </h5>
+                                <h5>
+                                    <span>$236.00</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 py-2 px-4 mb-4" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="500">
+                        <div class="result-card card border-0" style="--back-behind:#ff6b01;">
+                            <div class="top-card d-flex justify-content-between mb-4">
+                                <i class="fa-solid fa-expand"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="main-card mb-5">
+                                <div class="result-img-box position-relative">
+                                    <div class="behind-img position-absolute rounded-5"></div>
+                                    <div class="related-img-box position-absolute p-3">
+                                        <div class="related-img position-relative">
+                                            <img class="w-100" src="related-0.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-card text-center">
+                                <h5 class="fw-bold mb-3">
+                                    Popular Shoe Trends
+                                </h5>
+                                <h5>
+                                    <span>$236.00</span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <!-- ! for animation i used this -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
